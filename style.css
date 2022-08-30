@@ -125,7 +125,9 @@ main {
 
 
 
-/* Last Part Or Footer part start */
+/*-----------------------------
+Last Part Or Footer part start
+------------------------------------- */
 
 footer {
     background-color: black;
@@ -133,6 +135,7 @@ footer {
 }
 
 .footer-goal {
+    height: 80px;
     display: flex;
     justify-content: center;
 }
@@ -144,12 +147,62 @@ hr {
 
 nav li {
     list-style: none;
-    /* display: flex;
-    justify-content: center; */
+
 }
 
 .web-info {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+}
+
+
+
+/* ------------------------------------------
+               Media Quary 
+-------------------------------------------------- */
+
+@media only screen and (max-width:688px) {
+
+
+
+    .player-container {
+        padding: 15%;
+        padding-top: 20%;
+        width: auto;
+        height: 900px;
+    }
+
+    .Blogs-1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+    }
+
+    .web-info {
+
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+}
+
+
+@media only screen and (min-width:688px) and (max-width:971px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+    }
+
+
+
 }
